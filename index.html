@@ -14,7 +14,7 @@
           <ul class="nav-list">
             <li class="nav-item"><a href="#about">About me</a></li>
             <li class="nav-item"><a href="#education">Education</a></li>
-            <li class="nav-item"><a href="#skills">Skills</a></li>
+            <li class="nav-item"><a href="#skills-list">Skills</a></li>
             <li class="nav-item"><a href="#code-example">Code example</a></li>
             <li class="nav-item"><a href="#project">Project</a></li>
             <li class="nav-item"><a href="#language">Language</a></li>
@@ -43,36 +43,36 @@
           <h2 class="education-title">Education</h2>
           <div class="education-content">
             <div class="education-content-item">
-              <div class="content-item-icon"></div>
-              <div class="content-item-year">2021-2022</div>
-              <div class="content-item-title">Stepic</div>
+              <div class="content-item-icon-1 content-item-icon"></div>
+              <div class="content-item-year">2021</div>
+              <div class="content-item-title">Book</div>
               <div class="content-item-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
                 odio eius libero ipsa, quidem adipisci molestias. Laudantium
               </div>
             </div>
             <div class="education-content-item">
-              <div class="content-item-icon"></div>
-              <div class="content-item-year">2021-2022</div>
-              <div class="content-item-title">RSS-stage-0</div>
+              <div class="content-item-icon-2 content-item-icon"></div>
+              <div class="content-item-year">2021</div>
+              <div class="content-item-title">Stepik</div>
               <div class="content-item-text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
                 maiores eos ex deleniti optio perferendis explicabo sapiente
               </div>
             </div>
             <div class="education-content-item">
-              <div class="content-item-icon"></div>
-              <div class="content-item-year">2022</div>
-              <div class="content-item-title">RSS-stage-1</div>
+              <div class="content-item-icon-3 content-item-icon"></div>
+              <div class="content-item-year">2021-2022</div>
+              <div class="content-item-title">RSS Stage#0</div>
               <div class="content-item-text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Perferendis ipsam velit soluta cum asperiores quam aliquam omnis
               </div>
             </div>
             <div class="education-content-item">
-              <div class="content-item-icon"></div>
+              <div class="content-item-icon-4 content-item-icon"></div>
               <div class="content-item-year">2022</div>
-              <div class="content-item-title">RSS-stage-1</div>
+              <div class="content-item-title">RSS Stage#1</div>
               <div class="content-item-text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Perferendis ipsam velit soluta cum asperiores quam aliquam omnis
@@ -80,13 +80,13 @@
             </div>
           </div>
         </section>
-        <section class="skills" id="skills">
+        <section class="skills" id="skills-list">
           <div class="skills-content">
             <div class="skills-content-image-back">
               <div class="skills-content-image"></div>
             </div>
             <div class="skills-content-text">
-              <div class="skills-content-title">My skills</div>
+              <div class="skills-content-title"><h2>My skills</h2></div>
               <div class="skills-content-subtitle">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laboriosam nostrum ipsam, veritatis natus harum illo accusantium
@@ -128,45 +128,48 @@
         <section class="code-example" id="code-example">
           <h2>My code example</h2>
           <pre>
-            const quote = document.querySelector('.quote');
-            const changeQuoteButton = document.querySelector('.btn');
-            const imgAuthor = document.querySelector('.img-autour');
-            const url = 'https://type.fit/api/quotes';
-            const urlImg = 'https://aws.random.cat/meow';
-            let langTargetButton = 0;
-            getQuoteEn ();
-            async function getQuoteEn () {
-               try {
-                const res = await fetch(url)
-                const data = await res.json()
-                randomQuote(data);
-               } catch{
-              console.log('error');
-              }
-            }
+           <code>
+    <span class="text_color">const</span> <span class="text_color-1">portfolioImages</span> = <span class="text_color-2">document</span><span class="text_color-3">.querySelectorAll</span><span class="text_color-4">(</span><span class="text_color-5">'.portfolio-item'</span><span class="text_color-4">)</span>;
+    <span class="text_color">const</span> <span class="text_color-1">portfolioButtons</span> = <span class="text_color-2">document</span><span class="text_color-3">.querySelector</span><span class="text_color-4">(</span><span class="text_color-5">'.portfolio-button'</span><span class="text_color-4">)</span>;
+    <span class="text_color">const</span> <span class="text_color-1">portfolioBtn</span> = <span class="text_color-2">document</span><span class="text_color-3">.querySelectorAll</span><span class="text_color-4">(</span><span class="text_color-5">'.portfolio-btn'</span><span class="text_color-4">)</span>;
+            
+    <span  class="text_color">function</span> <span class="text_color-3">changeImage</span><span class="text_color-4">(</span><span class="text_color-2">event</span><span class="text_color-4">){</span>
+      <span class="text_color-6">if(</span><span class="text_color-2">event</span>.<span class="text_color-2">target</span>.<span class="text_color-2">classList</span>.<span class="text_color-2">contains</span><span class="text_color">(</span><span class="text_color-5">'portfolio-btn'</span><span class="text_color">)</span><span class="text_color-6">) {</span>
+        <span class="text_color-1">portfolioImages</span>.<span class="text_color-3">forEach</span><span class="text_color">(</span><span class="text_color-5">(</span><span class="text_color-2">img</span>, <span class="text_color-2">index</span><span class="text_color-4">)</span> <span class="text_color-1">=></span> <span class="text_color-2">img</span>.<span class="text_color-2">src</span> = <span class="text_color-5">`./assets/img/</span><span class="text_color-4">${</span><span class="text_color-2">event</span>.<span class="text_color-2">target</span>.<span class="text_color-2">dataset</span>.<span class="text_color-2">season</span><span class="text_color-4">}</span><span class="text_color-5">/</span><span class="text_color-4">${</span><span class="text_color-2">index</span> + <span class="text_color-2">1</span><span class="text_color-4">}</span><span class="text_color-5">.jpg`</span><span class="text_color">)</span>;
+        <span class="text_color-1">portfolioBtn</span>.<span class="text_color-3">forEach</span><span class="text_color">(</span><span class="text_color-2">button</span> <span class="text_color-1">=></span> <span class="text_color-2">button</span>.<span class="text_color-2">classList</span>.<span class="text_color-3">remove</span><span class="text_color-4">(</span><span class="text_color-5">'portfolio-btn-active'</span><span class="text_color-4">)</span><span class="text_color">)</span>;
+        <span class="text_color-2">event</span>.<span class="text_color-2">target</span>.<span class="text_color-2">classList</span>.<span class="text_color-3">add</span><span class="text_color">(</span><span class="text_color-5">'portfolio-btn-active'</span><span class="text_color">)</span>;
+        <span class="text_color-6">}</span>
+      <span class="text_color-4">}</span>
+      <span class="text_color-1">portfolioButtons</span>.<span class="text_color-3">addEventListener</span><span class="text_color-4">(</span><span class="text_color-5">'click'</span>, <span class="text_color-3">changeImage</span><span class="text_color-4">)</span>;
+            
+    <span class="text_color">const</span> <span class="text_color-1">seasons</span> = <span class="text_color-4">[</span><span class="text_color-5">'winter'</span>, <span class="text_color-5">'spring'</span>, <span class="text_color-5">'summer'</span>, <span class="text_color-5">'autumn'</span><span class="text_color-4">]</span>;
 
-          function randomQuote (data){
-          let randomNum = Math.floor(Math.random()*data.length)
-         quote.textContent = data[randomNum].text;
-      }
-
-        async function getQuoteImg () {
-          try {
-        const res = await fetch(urlImg);
-        const data = await res.json();
-        imgAuthor.src = data.file;
-       } catch{
-           console.log('error');
-        }
-      }
+    <span class="text_color">function</span> <span class="text_color-3">preloadSummerImages</span><span class="text_color-4">(</span><span class="text_color-2">seasons</span><span class="text_color-4">) {</span>
+      <span class="text_color-2">seasons</span>.<span class="text_color-3">forEach</span><span class="text_color-6">(</span><span class="text_color">(</span><span class="text_color-2">value</span><span class="text_color">)</span> <span class="text_color-1">=></span> <span class="text_color">{</span>
+        <span class="text_color-6">for</span> <span class="text_color-4">(</span><span class="text_color">let</span> <span class="text_color-1">i</span> = <span class="text_color-1">1</span>; <span class="text_color-1">i</span> &lt; <span class="text_color-1">7</span>; <span class="text_color-1">i</span>++<span class="text_color-4">){</span>
+          <span class="text_color">const</span> <span class="text_color-1">img</span> = <span class="text_color">new</span> <span class="text_color-7">Image</span><span class="text_color-6">()</span>;
+          <span class="text_color-1">img</span>.<span class="text_color-2">src</span> = <span class="text_color-5">`assets/img/</span><span class="text_color-6">${</span><span class="text_color-2">value</span><span class="text_color-6">}</span><span class="text_color-5">/</span><span class="text_color-6">$</span><span class="text_color-6">{</span><span class="text_color-2">i</span><span class="text_color-6">}</span>.<span class="text_color-5">jpg`</span>;
+        <span class="text_color-4">}</span>;
+      <span class="text_color">}</span><span class="text_color-6">)</span>;
+    <span class="text_color-4">}</span>
+    <span class="text_color-3">preloadSummerImages</span><span class="text_color-4">(</span><span class="text_color-2">seasons</span><span class="text_color-4">)</span>;
+           </code>
           </pre>
         </section>
         <section class="project" id="project">
           <h2>My project</h2>
           <div class="project-content">
-            <a href=""><div class="project-item"></div></a>
-            <a href=""><div class="project-item"></div></a>
-            <a href=""><div class="project-item"></div></a>
+            <a
+              href="https://kirillmolotkov.github.io/portfolio_RSS/"
+              target="_blank"
+              ><div class="project-item project-item-1"></div
+            ></a>
+            <a href="https://kirillmolotkov.github.io/ecosounds_RSS/"
+              ><div class="project-item project-item-2"></div
+            ></a>
+            <a href="https://kirillmolotkov.github.io/random_jokes_RSS/"
+              ><div class="project-item project-item-3"></div
+            ></a>
           </div>
         </section>
         <section class="language" id="language">
@@ -197,12 +200,22 @@
           </div>
           <div class="contacts-form">
             <a href="mailto:balbes_goda@mail.ru">balbes_goda@mail.ru</a>
-            <form action="">
-              <input type="text" name="" id="" placeholder="Name" />
-              <input type="text" name="" id="" placeholder="Email" />
+            <form action="#">
+              <input
+                type="text"
+                name="firsName"
+                id="first_name"
+                placeholder="Name"
+              />
+              <input
+                type="text"
+                name="address"
+                id="email_address"
+                placeholder="Email"
+              />
               <textarea
-                name=""
-                id=""
+                name="commit"
+                id="commit_mesages"
                 cols="30"
                 rows="10"
                 placeholder="Messages"
@@ -213,9 +226,13 @@
         </section>
       </main>
       <footer class="footer">
-        <a href=""><div class="github"></div></a>
-        <div class="year"></div>
-        <a href=""><div class="courses"></div></a>
+        <a href="https://github.com/kirillmolotkov" target="_blank"
+          ><div class="github"></div
+        ></a>
+        <div class="year">2022</div>
+        <a href="https://rs.school/js-stage0/" target="_blank"
+          ><div class="courses"></div
+        ></a>
       </footer>
     </div>
   </body>

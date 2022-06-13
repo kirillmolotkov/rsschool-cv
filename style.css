@@ -274,7 +274,26 @@ body {
   flex-basis: 7%;
   width: 50px;
   height: 50px;
-  background-color: red;
+}
+.content-item-icon-1 {
+  background-image: url(/img/book.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content-item-icon-2 {
+  background-image: url(/img/Stepik_logotype.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content-item-icon-3 {
+  background-image: url(/img/rss-logo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content-item-icon-4 {
+  background-image: url(/img/rss-logo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .content-item-year {
   flex-basis: 15%;
@@ -307,8 +326,10 @@ body {
   align-items: flex-end;
   justify-content: end;
   width: 400px;
-  height: 550px;
-  background-color: #ac9664;
+  height: 500px;
+  background-image: url(/img/background-skills.png);
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
 }
 .skills-content-image {
   width: 300px;
@@ -391,24 +412,48 @@ body {
 }
 /* -----------------------------------------code example-------------------------------- */
 .code-example h2 {
-  padding-top: 50px;
-  padding-left: 80px;
+  padding: 50px 0 50px 80px;
   font-size: 3.8em;
   font-weight: 800;
   color: #fde3a7;
 }
 .code-example pre {
-  width: 700px;
-  padding-top: 50px;
-  padding-left: 80px;
+  font-size: 1.1em;
+  width: 1000px;
+  margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.5);
-  color: aqua;
+  color: rgb(237, 243, 242);
 }
+
 .code-example {
   height: 720px;
   background-image: url(/img/code-example.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.text_color {
+  color: rgb(0, 153, 255);
+}
+.text_color-1 {
+  color: rgb(0, 195, 255);
+}
+.text_color-2 {
+  color: rgb(0, 255, 221);
+}
+.text_color-3 {
+  color: rgb(214, 210, 148);
+}
+.text_color-4 {
+  color: rgb(231, 235, 18);
+}
+.text_color-5 {
+  color: rgb(245, 160, 104);
+}
+.text_color-6 {
+  color: rgb(177, 15, 199);
+}
+.text_color-7 {
+  color: rgb(8, 139, 36);
 }
 /* -------------------------------------------project----------------------------------- */
 .project {
@@ -433,7 +478,29 @@ body {
 .project-item {
   width: 250px;
   height: 250px;
-  background-color: #ac9664;
+}
+.project-item-1 {
+  background-image: url(/img/project-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5s ease-in-out;
+}
+.project-item-2 {
+  background-image: url(/img/project-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5s ease-in-out;
+}
+.project-item-3 {
+  background-image: url(/img/project-3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5s ease-in-out;
+}
+.project-item-1:hover,
+.project-item-2:hover,
+.project-item-3:hover {
+  transform: scale3d(1.3, 1.3, 1);
 }
 
 /* -------------------------------------------language---------------------------------- */
@@ -494,19 +561,22 @@ body {
   margin-right: 15px;
   width: 50px;
   height: 50px;
-  background-color: aqua;
+  background-image: url(/img/phone.png);
+  background-size: cover;
 }
 .contacts-list-icon-2 {
   margin-right: 15px;
   width: 50px;
   height: 50px;
-  background-color: aqua;
+  background-image: url(/img/telegram.png);
+  background-size: cover;
 }
 .contacts-list-icon-3 {
   margin-right: 15px;
   width: 50px;
   height: 50px;
-  background-color: aqua;
+  background-image: url(/img/discord.png);
+  background-size: cover;
 }
 
 .contacts-form form {
@@ -553,6 +623,10 @@ textarea::placeholder {
   border: none;
   color: #fde3a7;
   cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.contacts-form form button:hover {
+  border-radius: 15px;
 }
 .contacts-form a {
   text-decoration: none;
@@ -564,10 +638,24 @@ textarea::placeholder {
   height: 90px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer div {
-  width: 50px;
-  height: 50px;
+  font-size: 2.5em;
   align-self: center;
-  background-color: aqua;
+  color: #fde3a7;
+}
+.courses {
+  width: 200px;
+  height: 90px;
+  background-image: url(/img/rs_school-og.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.github {
+  width: 80px;
+  height: 80px;
+  background-image: url(/img/github.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
