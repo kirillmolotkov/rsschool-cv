@@ -132,25 +132,25 @@ q:after {
 /* fonts */
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(/fonts/Roboto-Bold.ttf);
+  src: url(./fonts/Roboto-Bold.ttf);
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(/fonts/Roboto-Regular.ttf);
+  src: url(./fonts/Roboto-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(/fonts/Roboto-Medium.ttf);
+  src: url(./fonts/Roboto-Medium.ttf);
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto", sans-serif;
-  src: url(/fonts/Roboto-Light.ttf);
+  src: url(./fonts/Roboto-Light.ttf);
   font-weight: 300;
   font-style: normal;
 }
@@ -169,7 +169,7 @@ body {
 .header {
   display: flex;
   height: 90px;
-  background: url(/img/header-image-1.jpg);
+  background: url(./img/header-image-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -205,7 +205,7 @@ body {
 /* main */
 .im {
   height: 630px;
-  background-image: url(/img/header-image.jpg);
+  background-image: url(./img/header-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 -90px;
@@ -298,7 +298,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 720px;
-  background-image: url(/img/education-background.jpg);
+  background-image: url(./img/education-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -332,22 +332,22 @@ body {
   height: 50px;
 }
 .content-item-icon-1 {
-  background-image: url(/img/book.png);
+  background-image: url(./img/book.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .content-item-icon-2 {
-  background-image: url(/img/Stepik_logotype.png);
+  background-image: url(./img/Stepik_logotype.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .content-item-icon-3 {
-  background-image: url(/img/rss-logo.jpg);
+  background-image: url(./img/rss-logo.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .content-item-icon-4 {
-  background-image: url(/img/rss-logo.jpg);
+  background-image: url(./img/rss-logo.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -386,14 +386,14 @@ body {
   justify-content: end;
   width: 400px;
   height: 500px;
-  background-image: url(/img/background-skills.png);
+  background-image: url(./img/background-skills.png);
   background-size: 300px 300px;
   background-repeat: no-repeat;
 }
 .skills-content-image {
   width: 300px;
   height: 450px;
-  background-image: url(/img/skills-image.jpg);
+  background-image: url(./img/skills-image.jpg);
 }
 .skills-content-text {
   width: 500px;
@@ -488,7 +488,7 @@ body {
 
 .code-example {
   height: 720px;
-  background-image: url(/img/code-example.jpg);
+  background-image: url(./img/code-example.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -541,19 +541,19 @@ body {
   height: 250px;
 }
 .project-item-1 {
-  background-image: url(/img/project-1.png);
+  background-image: url(./img/project-1.png);
   background-repeat: no-repeat;
   background-size: contain;
   transition: 0.5s ease-in-out;
 }
 .project-item-2 {
-  background-image: url(/img/project-2.png);
+  background-image: url(./img/project-2.png);
   background-repeat: no-repeat;
   background-size: contain;
   transition: 0.5s ease-in-out;
 }
 .project-item-3 {
-  background-image: url(/img/project-3.png);
+  background-image: url(./img/project-3.png);
   background-repeat: no-repeat;
   background-size: contain;
   transition: 0.5s ease-in-out;
@@ -567,7 +567,7 @@ body {
 /* -------------------------------------------language---------------------------------- */
 .language {
   height: 720px;
-  background-image: url(/img/language-images.jpg);
+  background-image: url(./img/language-images.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -622,21 +622,21 @@ body {
   margin-right: 15px;
   width: 50px;
   height: 50px;
-  background-image: url(/img/phone.png);
+  background-image: url(./img/phone.png);
   background-size: cover;
 }
 .contacts-list-icon-2 {
   margin-right: 15px;
   width: 50px;
   height: 50px;
-  background-image: url(/img/telegram.png);
+  background-image: url(./img/telegram.png);
   background-size: cover;
 }
 .contacts-list-icon-3 {
   margin-right: 15px;
   width: 50px;
   height: 50px;
-  background-image: url(/img/discord.png);
+  background-image: url(./img/discord.png);
   background-size: cover;
 }
 
@@ -709,14 +709,14 @@ textarea::placeholder {
 .courses {
   width: 200px;
   height: 90px;
-  background-image: url(/img/rs_school-og.png);
+  background-image: url(./img/rs_school-og.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .github {
   width: 80px;
   height: 80px;
-  background-image: url(/img/github.png);
+  background-image: url(./img/github.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
